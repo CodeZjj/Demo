@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "LaunchView.h"
+#import "LoginViewController.h"
+#import "BaseTabBarViewController.h"
+#import "SideView.h"
+#import "PSDrawerManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +22,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    //    NSDictionary *loginInfo = [[NSUserDefaults standardUserDefaults]objectForKey:@"loginInfo"];
+    //    if (loginInfo.count < 1)
+    //    {
+    //        //没有登录过
+    //        YYLoginViewController *loginVc = [[YYLoginViewController alloc]init];
+    //        self.window.rootViewController = loginVc;
+    //    }
+    //    else
+    //    {
+    //        YYTabbarViewController *tab = [[YYTabbarViewController alloc]init];
+    //        self.window.rootViewController = tab;
+    //    }
+//    LoginViewController *loginVc = [[LoginViewController alloc]init];
+//    self.window.rootViewController = loginVc;
+    BaseTabBarViewController *tab = [[BaseTabBarViewController alloc] init];
+    //self.window.rootViewController = tab;
+    
+    SideView *side = [[SideView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth * kLeftWidthScale, kScreenHeight)];
+    [[PSDrawerManager instance] installCenterViewController:tab leftView:side];
+    [[PSDrawerManager instance] cancelDragResponse];
+    
+    [self.window makeKeyAndVisible];
+//    //启动动画
+//    LaunchView *launch = [[LaunchView alloc]initWithView:self.window.rootViewController.view timeout:3.0];
+//    __weak typeof (launch)weakLaunch = launch;
+//    launch.launchBlock = ^{
+//        [weakLaunch removeFromSuperview];
+//    };
     return YES;
 }
 
