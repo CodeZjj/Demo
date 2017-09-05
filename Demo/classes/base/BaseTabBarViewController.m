@@ -73,10 +73,10 @@
         
         if ([[ThemeManager getInstance] currentTheme] == ThemeTypeDark) {
             [navi.navigationBar setBarTintColor:kRGBColor(17, 34, 57)];
-            [navi.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+            [navi.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:@"barry"size:15]}];
         } else {
             [navi.navigationBar setBarTintColor:[UIColor whiteColor]];
-            [navi.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]}];
+            [navi.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor],NSFontAttributeName:[UIFont fontWithName:@"barry"size:15]}];
         }
     }
 }

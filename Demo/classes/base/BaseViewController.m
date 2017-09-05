@@ -35,12 +35,12 @@
         self.view.backgroundColor = kRGBColor(17, 34, 57);
         
         [self.navigationController.navigationBar setBarTintColor:kRGBColor(17, 34, 57)];
-        [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:@"barry"size:15]}];
     } else {
         self.view.backgroundColor = [UIColor whiteColor];
         
         [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
-        [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]}];
+        [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor],NSFontAttributeName:[UIFont fontWithName:@"barry"size:15]}];
     }
 }
 

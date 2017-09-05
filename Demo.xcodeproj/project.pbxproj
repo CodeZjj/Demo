@@ -27,6 +27,8 @@
 		39F528661F5E8CD100F9537C /* SideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F528631F5E8CD100F9537C /* SideView.m */; };
 		39F5286D1F5E8D4E00F9537C /* PSDrawerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5286A1F5E8D4E00F9537C /* PSDrawerManager.m */; };
 		39F5286E1F5E8D4E00F9537C /* UIView+leoAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5286C1F5E8D4E00F9537C /* UIView+leoAdd.m */; };
+		FF9B43211F5ECD9E0028D50C /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B43201F5ECD9E0028D50C /* MyViewController.m */; };
+		FF9B43231F5ED2CC0028D50C /* barry.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF9B43221F5ED2CC0028D50C /* barry.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,9 @@
 		39F5286A1F5E8D4E00F9537C /* PSDrawerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDrawerManager.m; sourceTree = "<group>"; };
 		39F5286B1F5E8D4E00F9537C /* UIView+leoAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+leoAdd.h"; sourceTree = "<group>"; };
 		39F5286C1F5E8D4E00F9537C /* UIView+leoAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+leoAdd.m"; sourceTree = "<group>"; };
+		FF9B431F1F5ECD9E0028D50C /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		FF9B43201F5ECD9E0028D50C /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		FF9B43221F5ED2CC0028D50C /* barry.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = barry.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +159,7 @@
 		39F527E71F5E2B1400F9537C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FF9B43221F5ED2CC0028D50C /* barry.ttf */,
 				39F527E81F5E2B1400F9537C /* main.m */,
 				39F5282D1F5E439F00F9537C /* PrefixHeader.pch */,
 				39F5282E1F5E43B400F9537C /* Macro.h */,
@@ -191,6 +197,7 @@
 				39F528421F5E458100F9537C /* search */,
 				39F528321F5E458100F9537C /* course */,
 				39F5283A1F5E458100F9537C /* message */,
+				FF9B431B1F5ECD840028D50C /* my */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -440,6 +447,39 @@
 			path = side;
 			sourceTree = "<group>";
 		};
+		FF9B431B1F5ECD840028D50C /* my */ = {
+			isa = PBXGroup;
+			children = (
+				FF9B431C1F5ECD840028D50C /* controller */,
+				FF9B431D1F5ECD840028D50C /* model */,
+				FF9B431E1F5ECD840028D50C /* view */,
+			);
+			path = my;
+			sourceTree = "<group>";
+		};
+		FF9B431C1F5ECD840028D50C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF9B431F1F5ECD9E0028D50C /* MyViewController.h */,
+				FF9B43201F5ECD9E0028D50C /* MyViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FF9B431D1F5ECD840028D50C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FF9B431E1F5ECD840028D50C /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -548,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F527F41F5E2B1400F9537C /* Assets.xcassets in Resources */,
+				FF9B43231F5ED2CC0028D50C /* barry.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +625,7 @@
 				39F528311F5E449D00F9537C /* BaseTabBarViewController.m in Sources */,
 				39F527E91F5E2B1400F9537C /* main.m in Sources */,
 				39F5282B1F5E436D00F9537C /* LaunchView.m in Sources */,
+				FF9B43211F5ECD9E0028D50C /* MyViewController.m in Sources */,
 				39F528651F5E8CD100F9537C /* SideCell.m in Sources */,
 				39F528481F5E45B400F9537C /* HomeViewController.m in Sources */,
 				39F5285A1F5E700D00F9537C /* ThemeManager.m in Sources */,
