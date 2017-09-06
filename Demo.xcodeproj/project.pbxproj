@@ -27,6 +27,11 @@
 		39F528661F5E8CD100F9537C /* SideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F528631F5E8CD100F9537C /* SideView.m */; };
 		39F5286D1F5E8D4E00F9537C /* PSDrawerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5286A1F5E8D4E00F9537C /* PSDrawerManager.m */; };
 		39F5286E1F5E8D4E00F9537C /* UIView+leoAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5286C1F5E8D4E00F9537C /* UIView+leoAdd.m */; };
+		39F998291F5F80CD00A4F683 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F998281F5F80CD00A4F683 /* ChatModel.m */; };
+		39F9982C1F5F80E700A4F683 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9982B1F5F80E700A4F683 /* ChatCell.m */; };
+		39F998301F5F8D4E00A4F683 /* UIFont+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9982F1F5F8D4E00A4F683 /* UIFont+Extension.m */; };
+		39F9986F1F5F94B400A4F683 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F9986E1F5F94B400A4F683 /* ChatViewController.m */; };
+		39F998721F5F95CE00A4F683 /* MessageSendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F998711F5F95CE00A4F683 /* MessageSendView.m */; };
 		FF9B43211F5ECD9E0028D50C /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B43201F5ECD9E0028D50C /* MyViewController.m */; };
 		FF9B43231F5ED2CC0028D50C /* barry.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF9B43221F5ED2CC0028D50C /* barry.ttf */; };
 /* End PBXBuildFile section */
@@ -93,6 +98,16 @@
 		39F5286A1F5E8D4E00F9537C /* PSDrawerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDrawerManager.m; sourceTree = "<group>"; };
 		39F5286B1F5E8D4E00F9537C /* UIView+leoAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+leoAdd.h"; sourceTree = "<group>"; };
 		39F5286C1F5E8D4E00F9537C /* UIView+leoAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+leoAdd.m"; sourceTree = "<group>"; };
+		39F998271F5F80CD00A4F683 /* ChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
+		39F998281F5F80CD00A4F683 /* ChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
+		39F9982A1F5F80E700A4F683 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		39F9982B1F5F80E700A4F683 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		39F9982E1F5F8D4E00A4F683 /* UIFont+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extension.h"; sourceTree = "<group>"; };
+		39F9982F1F5F8D4E00A4F683 /* UIFont+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extension.m"; sourceTree = "<group>"; };
+		39F9986D1F5F94B400A4F683 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		39F9986E1F5F94B400A4F683 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		39F998701F5F95CE00A4F683 /* MessageSendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageSendView.h; sourceTree = "<group>"; };
+		39F998711F5F95CE00A4F683 /* MessageSendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageSendView.m; sourceTree = "<group>"; };
 		FF9B431F1F5ECD9E0028D50C /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		FF9B43201F5ECD9E0028D50C /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		FF9B43221F5ED2CC0028D50C /* barry.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = barry.ttf; sourceTree = "<group>"; };
@@ -188,6 +203,7 @@
 		39F5281A1F5E436D00F9537C /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				39F9982D1F5F8D3C00A4F683 /* extension */,
 				39F528671F5E8D4E00F9537C /* thirdParty */,
 				39F528551F5E461000F9537C /* tools */,
 				39F5281B1F5E436D00F9537C /* base */,
@@ -337,6 +353,8 @@
 		39F5283B1F5E458100F9537C /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				39F9986D1F5F94B400A4F683 /* ChatViewController.h */,
+				39F9986E1F5F94B400A4F683 /* ChatViewController.m */,
 				39F5284F1F5E45E000F9537C /* MessageViewController.h */,
 				39F528501F5E45E000F9537C /* MessageViewController.m */,
 			);
@@ -346,6 +364,8 @@
 		39F5283C1F5E458100F9537C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				39F998271F5F80CD00A4F683 /* ChatModel.h */,
+				39F998281F5F80CD00A4F683 /* ChatModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -353,6 +373,10 @@
 		39F5283D1F5E458100F9537C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				39F9982A1F5F80E700A4F683 /* ChatCell.h */,
+				39F9982B1F5F80E700A4F683 /* ChatCell.m */,
+				39F998701F5F95CE00A4F683 /* MessageSendView.h */,
+				39F998711F5F95CE00A4F683 /* MessageSendView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -445,6 +469,15 @@
 				39F5286C1F5E8D4E00F9537C /* UIView+leoAdd.m */,
 			);
 			path = side;
+			sourceTree = "<group>";
+		};
+		39F9982D1F5F8D3C00A4F683 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				39F9982E1F5F8D4E00A4F683 /* UIFont+Extension.h */,
+				39F9982F1F5F8D4E00A4F683 /* UIFont+Extension.m */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		FF9B431B1F5ECD840028D50C /* my */ = {
@@ -617,14 +650,19 @@
 				39F528511F5E45E000F9537C /* MessageViewController.m in Sources */,
 				39F5286E1F5E8D4E00F9537C /* UIView+leoAdd.m in Sources */,
 				39F528641F5E8CD100F9537C /* SideModel.m in Sources */,
+				39F9986F1F5F94B400A4F683 /* ChatViewController.m in Sources */,
 				39F5282A1F5E436D00F9537C /* BaseViewController.m in Sources */,
+				39F998301F5F8D4E00A4F683 /* UIFont+Extension.m in Sources */,
 				39F5282C1F5E436D00F9537C /* LoginViewController.m in Sources */,
+				39F998291F5F80CD00A4F683 /* ChatModel.m in Sources */,
 				39F528291F5E436D00F9537C /* BaseNaviViewController.m in Sources */,
 				39F5284B1F5E45C300F9537C /* SearchViewController.m in Sources */,
 				39F528661F5E8CD100F9537C /* SideView.m in Sources */,
 				39F528311F5E449D00F9537C /* BaseTabBarViewController.m in Sources */,
 				39F527E91F5E2B1400F9537C /* main.m in Sources */,
+				39F998721F5F95CE00A4F683 /* MessageSendView.m in Sources */,
 				39F5282B1F5E436D00F9537C /* LaunchView.m in Sources */,
+				39F9982C1F5F80E700A4F683 /* ChatCell.m in Sources */,
 				FF9B43211F5ECD9E0028D50C /* MyViewController.m in Sources */,
 				39F528651F5E8CD100F9537C /* SideCell.m in Sources */,
 				39F528481F5E45B400F9537C /* HomeViewController.m in Sources */,

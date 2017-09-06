@@ -7,6 +7,8 @@
 //
 #ifdef __OBJC__
 #import "Macro.h"
+#import "ThemeManager.h"
+#import "UIFont+Extension.h"
 #endif
 
 #ifndef PrefixHeader_pch

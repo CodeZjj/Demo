@@ -7,7 +7,6 @@
 //
 
 #import "BaseViewController.h"
-#import "ThemeManager.h"
 
 @interface BaseViewController ()
 
@@ -18,11 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    if ([[ThemeManager getInstance] currentTheme] == ThemeTypeDark) {
-        self.view.backgroundColor = kRGBColor(17, 34, 57);
-    } else {
-        self.view.backgroundColor = [UIColor whiteColor];
-    }
+    self.view.backgroundColor = THEMECOLOR;
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
@@ -32,9 +27,9 @@
 - (void)changeTheme
 {
     if ([[ThemeManager getInstance] currentTheme] == ThemeTypeDark) {
-        self.view.backgroundColor = kRGBColor(17, 34, 57);
+        self.view.backgroundColor = kRGBColor(28, 51, 81);
         
-        [self.navigationController.navigationBar setBarTintColor:kRGBColor(17, 34, 57)];
+        [self.navigationController.navigationBar setBarTintColor:kRGBColor(28, 51, 81)];
         [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:@"barry"size:15]}];
     } else {
         self.view.backgroundColor = [UIColor whiteColor];

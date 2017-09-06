@@ -50,6 +50,8 @@ static CGFloat const kLeftWidthScale = 0.2;
  */
 - (void)resetShowType:(PSDrawerManagerShowType)showType;
 
+@property (nonatomic, assign) BOOL isShowSide;
+
 @property (nonatomic, weak, readonly) UIViewController *centerViewController;
 
 @property (nonatomic, weak, readonly) UIView *leftView;

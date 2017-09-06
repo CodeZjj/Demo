@@ -7,7 +7,6 @@
 //
 
 #import "HomeViewController.h"
-#import "ThemeManager.h"
 #import "PSDrawerManager.h"
 #import "MyViewController.h"
 
@@ -31,6 +30,11 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:side];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sideSelectRow:) name:@"Side" object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 }
 
 // 侧边栏

@@ -25,7 +25,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         if ([[ThemeManager getInstance] currentTheme] == ThemeTypeDark) {
-            self.backgroundColor = kRGBColor(17, 34, 57);
+            self.backgroundColor = kRGBColor(28, 51, 81);
         } else {
             self.backgroundColor = [UIColor whiteColor];
         }
@@ -44,8 +44,8 @@
     [self initData];
     
     if ([[ThemeManager getInstance] currentTheme] == ThemeTypeDark) {
-        self.backgroundColor = kRGBColor(17, 34, 57);
-        self.tableview.backgroundColor = kRGBColor(17, 34, 57);
+        self.backgroundColor = kRGBColor(28, 51, 81);
+        self.tableview.backgroundColor = kRGBColor(28, 51, 81);
     } else {
         self.backgroundColor = [UIColor whiteColor];
         self.tableview.backgroundColor = [UIColor whiteColor];
@@ -57,7 +57,7 @@
     if (!_tableview) {
         _tableview = [[UITableView alloc] init];
         if ([[ThemeManager getInstance] currentTheme] == ThemeTypeDark) {
-            _tableview.backgroundColor = kRGBColor(17, 34, 57);
+            _tableview.backgroundColor = kRGBColor(28, 51, 81);
         } else {
             _tableview.backgroundColor = [UIColor whiteColor];
         }

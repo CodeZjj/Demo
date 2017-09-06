@@ -7,7 +7,6 @@
 //
 
 #import "BaseNaviViewController.h"
-#import "ThemeManager.h"
 
 @interface BaseNaviViewController ()
 
@@ -17,7 +16,7 @@
 
 + (void)initialize {
     if ([[ThemeManager getInstance] currentTheme] == ThemeTypeDark) {
-        [[UINavigationBar appearance] setBarTintColor:kRGBColor(17, 34, 57)];
+        [[UINavigationBar appearance] setBarTintColor:kRGBColor(28, 51, 81)];
         //[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
         [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:@"barry"size:15]}];
     } else {

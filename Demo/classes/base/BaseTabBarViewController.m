@@ -11,10 +11,10 @@
 #import "HomeViewController.h"
 #import "SearchViewController.h"
 #import "CourseViewController.h"
-#import "MessageViewController.h"
-#import "ThemeManager.h"
+#import "ChatViewController.h"
+#import "PSDrawerManager.h"
 
-@interface BaseTabBarViewController ()
+@interface BaseTabBarViewController ()<UITabBarDelegate>
 
 @property(nonatomic, strong)NSArray *normals;
 
@@ -72,7 +72,7 @@
         navi.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
         
         if ([[ThemeManager getInstance] currentTheme] == ThemeTypeDark) {
-            [navi.navigationBar setBarTintColor:kRGBColor(17, 34, 57)];
+            [navi.navigationBar setBarTintColor:kRGBColor(28, 51, 81)];
             [navi.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:@"barry"size:15]}];
         } else {
             [navi.navigationBar setBarTintColor:[UIColor whiteColor]];
@@ -104,7 +104,7 @@
 
 - (void)createTabBarController
 {
-    NSArray *controllers = [NSArray arrayWithObjects:@"HomeViewController",@"MessageViewController",@"CourseViewController",@"SearchViewController", nil];
+    NSArray *controllers = [NSArray arrayWithObjects:@"HomeViewController",@"ChatViewController",@"CourseViewController",@"SearchViewController", nil];
     for (int i = 0; i < controllers.count; i++)
     {
         UIViewController *vc = [self createViewControllerWith:controllers[i] withTitle:@"" withNormalImg:self.normals[i] withSelectedImage:self.selects[i]];
@@ -122,6 +122,13 @@
     vc.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
     BaseNaviViewController *nav = [[BaseNaviViewController alloc] initWithRootViewController:vc];
     return nav;
+}
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    if ([[PSDrawerManager instance] isShowSide]) {
+        [[PSDrawerManager instance] showOrHideSideInView:self.view];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

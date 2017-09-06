@@ -60,4 +60,28 @@
     }
 }
 
+//当前主题颜色
+- (UIColor *)currentThemeColor
+{
+    NSString *typeStr = [[NSUserDefaults standardUserDefaults] objectForKey:@"ThemeType"];
+    if ([typeStr isEqualToString:@"light"]) {
+        return [UIColor whiteColor];
+    } else {
+        return kRGBColor(28, 51, 81);
+    }
+}
+
+/**
+ @brief 当前主题字体颜色
+ */
+- (UIColor *)currentThemeFontColor
+{
+    NSString *typeStr = [[NSUserDefaults standardUserDefaults] objectForKey:@"ThemeType"];
+    if ([typeStr isEqualToString:@"light"]) {
+        return [UIColor blackColor];
+    } else {
+        return [UIColor whiteColor];
+    }
+}
+
 @end

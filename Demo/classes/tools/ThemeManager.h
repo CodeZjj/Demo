@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 static NSString * const ThemeChange = @"ThemeChange";//主题变换通知
 
@@ -29,5 +30,15 @@ typedef enum{
  @brief 当前主题
  */
 - (ThemeType)currentTheme;
+
+/**
+ @brief 当前主题颜色
+ */
+- (UIColor *)currentThemeColor;
+
+/**
+ @brief 当前主题字体颜色
+ */
+- (UIColor *)currentThemeFontColor;
 
 @end

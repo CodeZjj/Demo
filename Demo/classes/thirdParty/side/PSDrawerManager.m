@@ -17,7 +17,6 @@
 @property (nonatomic, weak, readwrite) UIViewController *centerViewController;
 @property (nonatomic, weak, readwrite) UIView *leftView;
 @property (nonatomic, strong) UIPanGestureRecognizer *pan;
-@property (nonatomic, assign) BOOL isShowSide;
 
 @end
 
